@@ -1,0 +1,9 @@
+chromadb
+torch
+gradio
+PyPDF2
+pypdf
+sentence_transformers
+langchain
+langchain-community
+sentencepiece

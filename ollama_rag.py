@@ -6,7 +6,14 @@ from langchain_community.llms import Ollama
 import gradio as gr
 
 # Load documents
-loader = OnlinePDFLoader("https://css4.pub/2017/newsletter/drylab.pdf")
+#loader = pyPDFLoader("GPU Droplet GA FAQ.pdf")
+#documents = loader.load()
+from langchain_community.document_loaders import PyPDFLoader
+
+file_path = (
+    "3rd module notes.pdf"
+)
+loader = PyPDFLoader(file_path)
 documents = loader.load()
 
 # Create embeddings
